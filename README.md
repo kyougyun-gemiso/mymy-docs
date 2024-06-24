@@ -35,3 +35,7 @@ mkdocs build - Build the documentation site.
 mkdocs -h - Print help message and exit.
 ```
 
+## github-pages
+```
+mkdocs gh-deploy
+```
