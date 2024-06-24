@@ -1,0 +1,38 @@
+site_name: MYMY Archive
+
+theme:
+  name: readthedocs
+
+plugins: []
+
+
+nav:
+  - '소개': 'index.md'
+  - '사용자 매뉴얼':
+    - '랜딩 페이지':
+      - '랜딩 페이지': 'landing_page/landing_page.md'
+      - '회원 가입': 'landing_page/sign_up.md'
+      - '로그인': 'landing_page/login_page.md'
+      - '아카이브 홈': 'landing_page/archive_home.md'
+    - '사용자 설정':
+      - '사용자 정보' : 'user_setting/user_info.md'
+      - '비밀번호 변경': 'user_setting/change_password.md'
+      - '업로드 관리': 'user_setting/upload_management.md'
+      - '다운로드 관리': 'user_setting/download_management.md'
+    - '아카이브':
+      - '카테고리 뷰': 'archive/category_view.md'
+      - '애뉴얼 뷰': 'archive/annual_view.md'
+    - '검색':
+      - '통합검색': 'search/integrated_search.md'
+      - '필터': 'search/filter_options.md'
+    - '커뮤니티':
+      - '커뮤니티 홈': 'community/community_home.md'
+      - '커뮤니티 설정': 'community/community_settings.md'
+  - '관리자 매뉴얼':
+    - '대시보드': 'admin_guide/dashboard.md'
+    - '사용자 관리': 'admin_guide/user_management.md'
+    - '커뮤니티 관리': 'admin_guide/community_management.md'
+  - '오류 해결':
+    - '오류 해결': 'troubleshooting/troubleshooting.md'
+  - 'About': 'about.md'
+

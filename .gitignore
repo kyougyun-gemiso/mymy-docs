@@ -1,0 +1,6 @@
+site/
+.venv/
+
+# IDE
+.idea/
+.vscode/
