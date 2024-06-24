@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Alarm management - MYMY Archive</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Alarm management";
+        var mkdocs_page_input_path = "admin_guide\\alarm_management.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> MYMY Archive
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">소개</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">사용자 매뉴얼</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >랜딩 페이지</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../landing_page/landing_page/">랜딩 페이지</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../landing_page/sign_up/">회원 가입</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../landing_page/login_page/">로그인</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../landing_page/archive_home/">아카이브 홈</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >사용자 설정</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../user_setting/user_info/">사용자 정보</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../user_setting/change_password/">비밀번호 변경</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../user_setting/upload_management/">업로드 관리</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../user_setting/download_management/">다운로드 관리</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >아카이브</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../archive/category_view/">카테고리 뷰</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../archive/annual_view/">애뉴얼 뷰</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >검색</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../search/integrated_search/">통합검색</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../search/filter_options/">필터</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >커뮤니티</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../community/community_home/">커뮤니티 홈</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../community/community_settings/">커뮤니티 설정</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">관리자 매뉴얼</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard/">대시보드</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../user_management/">사용자 관리</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../community_management/">커뮤니티 관리</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">오류 해결</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">오류 해결</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">MYMY Archive</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Alarm management</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="_1">알람</h2>
+<h3 id="_2">알람 기능 개요</h3>
+<p>MYMY 아카이브의 알람 기능은 관리자가 시스템 상태와 사용자 활동을 실시간으로 모니터링하고 중요한 이벤트를 빠르게 인지할 수 있도록 도와줍니다. 알람은 다양한 이벤트에 대해 설정할 수 있으며, 알람 발생 시 관리자에게 즉각적으로 통보됩니다.</p>
+<h3 id="_3">알람 설정 접근</h3>
+<ol>
+<li><strong>관리자 페이지 접근</strong></li>
+<li>
+<p>GNB(Global Navigation Bar)에서 ‘관리자 페이지’를 클릭하여 관리자 페이지로 이동합니다.</p>
+</li>
+<li>
+<p><strong>알람 관리 메뉴 선택</strong></p>
+</li>
+<li>관리자 페이지의 메뉴에서 ‘알람 관리’를 선택합니다.</li>
+</ol>
+<h3 id="_4">알람 관리 기능</h3>
+<h4 id="_5">알람 설정</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>알람 종류</strong></td>
+<td>설정할 알람의 종류를 선택합니다. 예: 시스템 상태, 사용자 활동, 업로드 실패 등.</td>
+</tr>
+<tr>
+<td><strong>알람 조건</strong></td>
+<td>알람이 발생할 조건을 설정합니다. 예: CPU 사용량 90% 이상, 특정 사용자의 로그인 실패 시도 등.</td>
+</tr>
+<tr>
+<td><strong>알람 수신자</strong></td>
+<td>알람을 수신할 관리자 또는 사용자 이메일을 입력합니다.</td>
+</tr>
+<tr>
+<td><strong>알람 방법</strong></td>
+<td>알람이 발생할 때 통보 방법을 선택합니다. 예: 이메일, SMS, 시스템 내 알림 등.</td>
+</tr>
+<tr>
+<td><strong>저장 버튼</strong></td>
+<td>설정한 알람 정보를 저장합니다.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_6">알람 목록</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>알람 종류 필터</strong></td>
+<td>특정 알람 종류를 필터링하여 목록을 조회할 수 있습니다.</td>
+</tr>
+<tr>
+<td><strong>알람 목록</strong></td>
+<td>설정된 모든 알람의 목록을 보여줍니다.</td>
+</tr>
+<tr>
+<td><strong>알람 편집</strong></td>
+<td>선택한 알람의 설정을 편집할 수 있습니다.</td>
+</tr>
+<tr>
+<td><strong>알람 삭제</strong></td>
+<td>선택한 알람을 삭제할 수 있습니다.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">알람 설정 절차</h3>
+<ol>
+<li><strong>알람 종류 선택</strong></li>
+<li>
+<p>설정할 알람의 종류를 선택합니다. 예: 시스템 상태, 사용자 활동, 업로드 실패 등.</p>
+</li>
+<li>
+<p><strong>알람 조건 설정</strong></p>
+</li>
+<li>
+<p>알람이 발생할 조건을 설정합니다. 예: CPU 사용량이 90% 이상일 때, 특정 사용자의 로그인 실패 시도 발생 시 등.</p>
+</li>
+<li>
+<p><strong>알람 수신자 입력</strong></p>
+</li>
+<li>
+<p>알람을 수신할 관리자 또는 사용자의 이메일 주소를 입력합니다. 여러 수신자를 설정할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>알람 방법 선택</strong></p>
+</li>
+<li>
+<p>알람이 발생할 때 통보 받을 방법을 선택합니다. 예: 이메일, SMS, 시스템 내 알림 등.</p>
+</li>
+<li>
+<p><strong>저장 버튼 클릭</strong></p>
+</li>
+<li>설정한 알람 정보를 저장합니다.</li>
+</ol>
+<h3 id="_8">알람 화면 구성</h3>
+<h4 id="_9">알람 설정 화면</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>알람 종류</strong></td>
+<td>설정할 알람의 종류를 선택합니다. 예: 시스템 상태, 사용자 활동, 업로드 실패 등.</td>
+</tr>
+<tr>
+<td><strong>알람 조건</strong></td>
+<td>알람이 발생할 조건을 설정합니다. 예: CPU 사용량 90% 이상, 특정 사용자의 로그인 실패 시도 등.</td>
+</tr>
+<tr>
+<td><strong>알람 수신자</strong></td>
+<td>알람을 수신할 관리자 또는 사용자 이메일을 입력합니다.</td>
+</tr>
+<tr>
+<td><strong>알람 방법</strong></td>
+<td>알람이 발생할 때 통보 방법을 선택합니다. 예: 이메일, SMS, 시스템 내 알림 등.</td>
+</tr>
+<tr>
+<td><strong>저장 버튼</strong></td>
+<td>설정한 알람 정보를 저장합니다.</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="알람 설정 화면" src="path/to/alarm_settings_image.png" /></p>
+<h4 id="_10">알람 목록 화면</h4>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>알람 종류 필터</strong></td>
+<td>특정 알람 종류를 필터링하여 목록을 조회할 수 있습니다.</td>
+</tr>
+<tr>
+<td><strong>알람 목록</strong></td>
+<td>설정된 모든 알람의 목록을 보여줍니다.</td>
+</tr>
+<tr>
+<td><strong>알람 편집</strong></td>
+<td>선택한 알람의 설정을 편집할 수 있습니다.</td>
+</tr>
+<tr>
+<td><strong>알람 삭제</strong></td>
+<td>선택한 알람을 삭제할 수 있습니다.</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="알람 목록 화면" src="path/to/alarm_list_image.png" /></p>
+<h3 id="_11">주의 사항</h3>
+<ul>
+<li><strong>정확한 알람 조건 설정</strong>: 알람 조건을 정확히 설정하여 불필요한 알람이 발생하지 않도록 합니다.</li>
+<li><strong>알람 수신자 관리</strong>: 알람을 수신할 관리자 또는 사용자의 이메일 주소를 정확히 입력하여 중요한 알람을 놓치지 않도록 합니다.</li>
+<li><strong>알람 방법 선택</strong>: 상황에 맞는 알람 통보 방법을 선택하여 신속하게 대응할 수 있도록 합니다.</li>
+<li><strong>정기적 검토</strong>: 설정된 알람을 정기적으로 검토하고 필요에 따라 업데이트하여 시스템 상태를 효과적으로 모니터링합니다.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
