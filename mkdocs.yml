@@ -30,8 +30,14 @@ nav:
       - '커뮤니티 설정': 'community/community_settings.md'
   - '관리자 매뉴얼':
     - '대시보드': 'admin_guide/dashboard.md'
-    - '사용자 관리': 'admin_guide/user_management.md'
+    - '시스템': 'admin_guide/system_settings.md'
+    - '스토리지': 'admin_guide/storage_settings.md'
+    - '사용자': 'admin_guide/user_management.md'
+    - '콘텐츠': 'admin_guide/content_management.md'
+    - '아카이브': 'admin_guide/archive_management.md'
+    - '메타데이터': 'admin_guide/metadata_management.md'    
     - '커뮤니티 관리': 'admin_guide/community_management.md'
+    - '알람': 'admin_guide/alarm_history.md'
   - '오류 해결':
     - '오류 해결': 'troubleshooting/troubleshooting.md'
   - 'About': 'about.md'
