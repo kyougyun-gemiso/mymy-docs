@@ -1,3 +1,5 @@
+# gh-pages
+https://kyougyun-gemiso.github.io/mymy-docs/
 
 # venv
 
