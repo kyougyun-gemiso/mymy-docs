@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>시스템 - MYMY Archive</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\uc2dc\uc2a4\ud15c";
+        var mkdocs_page_input_path = "admin_guide\\system_settings.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> MYMY Archive
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">소개</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">사용자 매뉴얼</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" >랜딩 페이지</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../landing_page/landing_page/">랜딩 페이지</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../landing_page/sign_up/">회원 가입</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../landing_page/login_page/">로그인</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../landing_page/archive_home/">아카이브 홈</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >사용자 설정</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../user_setting/user_info/">사용자 정보</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../user_setting/change_password/">비밀번호 변경</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../user_setting/upload_management/">업로드 관리</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../user_setting/download_management/">다운로드 관리</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >아카이브</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../archive/category_view/">카테고리 뷰</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../archive/annual_view/">애뉴얼 뷰</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >검색</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../search/integrated_search/">통합검색</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../search/filter_options/">필터</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >커뮤니티</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../community/community_home/">커뮤니티 홈</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../community/community_settings/">커뮤니티 설정</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">관리자 매뉴얼</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard/">대시보드</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">시스템</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_2">시스템 설정</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_3">시스템 설정 화면 사용 방법</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">인제스트 설정</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_5">인제스트 설정 화면 사용 방법</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_6">인제스트 설정 항목 설명</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_7">인제스트 형식</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#_8">인제스트 형식 화면 사용 방법</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_9">인제스트 형식 항목 설명</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../storage_settings/">스토리지</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../user_management/">사용자</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../content_management/">콘텐츠</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../archive_management/">아카이브</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../metadata_management/">메타데이터</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../community_management/">커뮤니티 관리</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../alarm_history/">알람</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">오류 해결</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../troubleshooting/troubleshooting/">오류 해결</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">MYMY Archive</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">관리자 매뉴얼</li>
+      <li class="breadcrumb-item active">시스템</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1">시스템</h1>
+<h2 id="_2">시스템 설정</h2>
+<p>시스템 설정 페이지는 MYMY Archive 시스템의 다양한 설정 항목을 관리할 수 있는 인터페이스입니다. 아래 표는 시스템 설정 페이지에서 사용 가능한 설정 항목들에 대한 설명입니다.</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>이름</th>
+<th>한글 이름</th>
+<th>유형</th>
+<th>코드</th>
+<th>데이터 형식</th>
+<th>값</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>application name</td>
+<td>애플리케이션 이름</td>
+<td>UI</td>
+<td>APP_NAME</td>
+<td>STRING</td>
+<td>MYMY</td>
+<td>-</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ariel proxy api key</td>
+<td>아리엘 프록시 API 키</td>
+<td>SYSTEM</td>
+<td>ARIEL_PROXY_API_KEY</td>
+<td>STRING</td>
+<td>eyJ0eXA...</td>
+<td>-</td>
+</tr>
+<tr>
+<td>3</td>
+<td>the ariel proxy api route</td>
+<td>아리엘 프록시 API 루트</td>
+<td>SYSTEM</td>
+<td>ARIEL_PROXY_API_ROUTE</td>
+<td>STRING</td>
+<td>http://127.0.0.1/...</td>
+<td>-</td>
+</tr>
+<tr>
+<td>4</td>
+<td>the backup time every day</td>
+<td>매일 백업 시간</td>
+<td>SYSTEM</td>
+<td>BACKUP_PERIOD</td>
+<td>DATE</td>
+<td>2020/07/11</td>
+<td>-</td>
+</tr>
+<tr>
+<td>5</td>
+<td>default language</td>
+<td>기본 설정 언어</td>
+<td>UI</td>
+<td>DEFAULT_LANGUAGE</td>
+<td>STRING OPTIONS</td>
+<td>ko</td>
+<td>-</td>
+</tr>
+<tr>
+<td>6</td>
+<td>default items per page</td>
+<td>페이징 기본 항목</td>
+<td>UI</td>
+<td>DEFAULT_PAGE_SIZE</td>
+<td>INTEGER</td>
+<td>100</td>
+<td>-</td>
+</tr>
+<tr>
+<td>7</td>
+<td>default value of quota</td>
+<td>일반 사용자에 대한 할당량 기본값</td>
+<td>SYSTEM</td>
+<td>DEFAULT_QUOTA</td>
+<td>INTEGER OPTIONS</td>
+<td>9999999</td>
+<td>-</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Delete temporary files</td>
+<td>임시 파일 삭제</td>
+<td>SYSTEM</td>
+<td>DELETE_TMP_FILE</td>
+<td>INTEGER</td>
+<td>604800</td>
+<td>-</td>
+</tr>
+<tr>
+<td>9</td>
+<td>path of elastic certificate</td>
+<td>탄력적 인증서의 경로</td>
+<td>SYSTEM</td>
+<td>ELASTIC_SEARCH_CERT_PATH</td>
+<td>STRING</td>
+<td>../../http_ca.crt</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Enable Elastic search</td>
+<td>탄력적 검색 활성화</td>
+<td>SYSTEM</td>
+<td>ELASTIC_SEARCH_ENABLED</td>
+<td>BOOLEAN</td>
+<td>true</td>
+<td>-</td>
+</tr>
+<tr>
+<td>11</td>
+<td>ElasticSearch IP and port</td>
+<td>ElasticSearch IP 및 포트</td>
+<td>SYSTEM</td>
+<td>ELASTIC_SEARCH_HOST</td>
+<td>STRING</td>
+<td>https://ec2-3-34-18...</td>
+<td>-</td>
+</tr>
+<tr>
+<td>12</td>
+<td>ElasticSearch Index</td>
+<td>엘라스틱서치 인덱스</td>
+<td>SYSTEM</td>
+<td>ELASTIC_SEARCH_INDEX</td>
+<td>STRING</td>
+<td>mymy_index</td>
+<td>-</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Password of elastic user</td>
+<td>Elastic 사용자 비밀번호</td>
+<td>SYSTEM</td>
+<td>ELASTIC_SEARCH_PASSWORD</td>
+<td>STRING</td>
+<td>***</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_3">시스템 설정 화면 사용 방법</h3>
+<ol>
+<li><strong>시스템 설정 페이지 접근</strong>:</li>
+<li>
+<p>좌측 메뉴에서 <code>시스템</code> -&gt; <code>시스템 설정</code>을 클릭하여 시스템 설정 페이지에 접근할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>설정 검색</strong>:</p>
+</li>
+<li>
+<p>설정 항목을 검색하려면 페이지 상단의 검색 창에 검색어를 입력하고 <code>검색</code> 버튼을 클릭합니다.</p>
+</li>
+<li>
+<p><strong>설정 항목 추가</strong>:</p>
+</li>
+<li>
+<p>새로운 설정 항목을 추가하려면 페이지 우측 하단의 <code>등록</code> 버튼을 클릭합니다. 새로운 설정 팝업 창이 열리며, 여기서 설정 항목의 이름, 유형, 코드, 데이터 형식, 값 등을 입력한 후 <code>저장</code> 버튼을 클릭하여 설정 항목을 추가합니다.</p>
+</li>
+<li>
+<p><strong>설정 항목 수정</strong>:</p>
+</li>
+<li>
+<p>설정 항목을 수정하려면 설정 목록에서 해당 항목을 클릭하여 편집 모드로 전환한 후 필요한 정보를 수정합니다. 수정 후 <code>저장</code> 버튼을 클릭하여 변경 사항을 저장합니다.</p>
+</li>
+<li>
+<p><strong>설정 항목 삭제</strong>:</p>
+</li>
+<li>설정 항목을 삭제하려면 설정 목록에서 삭제할 항목 옆의 휴지통 아이콘을 클릭합니다. 삭제 확인 팝업 창이 열리며, 여기서 <code>확인</code> 버튼을 클릭하여 설정 항목을 삭제합니다.</li>
+</ol>
+<p>시스템 설정은 전체 시스템의 동작에 영향을 미칠 수 있으므로, 신중하게 설정을 변경해야 합니다. </p>
+<hr />
+<h2 id="_4">인제스트 설정</h2>
+<p>인제스트 설정 페이지는 MYMY Archive 시스템에서 다양한 형식의 미디어 파일을 인제스트(수집)하고 관리할 수 있는 기능을 제공합니다. 아래 표는 인제스트 설정 페이지에서 사용 가능한 설정 항목들에 대한 설명입니다.</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>유형</th>
+<th>프록시 포맷 - 높이</th>
+<th>메자닌 포맷 - 높이</th>
+<th>아카이브 설정(사용 여부, 실행일, 삭제일)</th>
+<th>리스토어 설정(삭제일)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>이미지</td>
+<td>jpg - 1080</td>
+<td>jpg - 1080</td>
+<td>✅ 7일, 7일</td>
+<td>7일</td>
+</tr>
+<tr>
+<td>2</td>
+<td>동영상</td>
+<td>h.264/aac, 1Mbps, mp4 - 1080</td>
+<td>h.264/aac, 10Mbps, mp4 - 1080</td>
+<td>✅ 7일, 7일</td>
+<td>7일</td>
+</tr>
+<tr>
+<td>3</td>
+<td>오디오</td>
+<td>mp3, 128kbps</td>
+<td>-</td>
+<td>✅ 7일, 7일</td>
+<td>7일</td>
+</tr>
+<tr>
+<td>4</td>
+<td>문서</td>
+<td>pdf</td>
+<td>-</td>
+<td>✅ 7일, 7일</td>
+<td>7일</td>
+</tr>
+<tr>
+<td>5</td>
+<td>3D 모델</td>
+<td>3D model proxy</td>
+<td>-</td>
+<td>❌ 0일, 0일</td>
+<td>7일</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">인제스트 설정 화면 사용 방법</h3>
+<ol>
+<li><strong>인제스트 설정 페이지 접근</strong>:</li>
+<li>
+<p>좌측 메뉴에서 <code>시스템</code> -&gt; <code>인제스트 설정</code>을 클릭하여 인제스트 설정 페이지에 접근할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>설정 검색</strong>:</p>
+</li>
+<li>
+<p>설정 항목을 검색하려면 페이지 상단의 검색 창에 검색어를 입력하고 <code>검색</code> 버튼을 클릭합니다.</p>
+</li>
+<li>
+<p><strong>설정 항목 추가</strong>:</p>
+</li>
+<li>
+<p>새로운 설정 항목을 추가하려면 페이지 우측 하단의 <code>등록</code> 버튼을 클릭합니다. 새로운 설정 팝업 창이 열리며, 여기서 설정 항목의 유형, 프록시 포맷, 메자닌 포맷, 아카이브 설정 등을 입력한 후 <code>저장</code> 버튼을 클릭하여 설정 항목을 추가합니다.</p>
+</li>
+<li>
+<p><strong>설정 항목 수정</strong>:</p>
+</li>
+<li>
+<p>설정 항목을 수정하려면 설정 목록에서 해당 항목을 클릭하여 편집 모드로 전환한 후 필요한 정보를 수정합니다. 수정 후 <code>저장</code> 버튼을 클릭하여 변경 사항을 저장합니다.</p>
+</li>
+<li>
+<p><strong>설정 항목 삭제</strong>:</p>
+</li>
+<li>설정 항목을 삭제하려면 설정 목록에서 삭제할 항목 옆의 휴지통 아이콘을 클릭합니다. 삭제 확인 팝업 창이 열리며, 여기서 <code>확인</code> 버튼을 클릭하여 설정 항목을 삭제합니다.</li>
+</ol>
+<hr />
+<h3 id="_6">인제스트 설정 항목 설명</h3>
+<ul>
+<li><strong>유형</strong>: 인제스트할 미디어 파일의 유형을 나타냅니다. (이미지, 동영상, 오디오, 문서, 3D 모델 등)</li>
+<li><strong>프록시 포맷 - 높이</strong>: 인제스트 과정에서 생성되는 프록시 파일의 포맷과 해상도를 나타냅니다.</li>
+<li><strong>메자닌 포맷 - 높이</strong>: 인제스트 과정에서 생성되는 메자닌 파일의 포맷과 해상도를 나타냅니다.</li>
+<li><strong>아카이브 설정</strong>: 해당 미디어 파일이 아카이브에 저장되는 여부와 설정된 보관 기간(사용 여부, 실행일, 삭제일)을 나타냅니다.</li>
+<li><strong>리스토어 설정</strong>: 해당 미디어 파일이 리스토어 될 때의 삭제일을 나타냅니다.</li>
+</ul>
+<p>인제스트 설정은 전체 시스템의 데이터 수집 및 관리에 중요한 역할을 하므로, 신중하게 설정을 변경해야 합니다.</p>
+<hr />
+<h2 id="_7">인제스트 형식</h2>
+<p>인제스트 형식 페이지는 MYMY Archive 시스템에서 다양한 형식의 미디어 파일을 인제스트(수집)하고 관리할 수 있는 형식 설정을 제공합니다. 아래 표는 인제스트 형식 페이지에서 사용 가능한 형식 항목들에 대한 설명입니다.</p>
+<table>
+<thead>
+<tr>
+<th>No.</th>
+<th>이름</th>
+<th>매체 유형</th>
+<th>코덱</th>
+<th>압축률</th>
+<th>확장자</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>h.265/aac, 20Mbps, mp4</td>
+<td>동영상</td>
+<td>h.265/aac</td>
+<td>20000 Kbps</td>
+<td>mp4</td>
+</tr>
+<tr>
+<td>2</td>
+<td>txt</td>
+<td>문서</td>
+<td>-</td>
+<td>-</td>
+<td>txt</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3D model proxy</td>
+<td>3D 모델</td>
+<td>-</td>
+<td>-</td>
+<td>glb</td>
+</tr>
+<tr>
+<td>4</td>
+<td>pdf</td>
+<td>문서</td>
+<td>-</td>
+<td>-</td>
+<td>pdf</td>
+</tr>
+<tr>
+<td>5</td>
+<td>png</td>
+<td>이미지</td>
+<td>PNG</td>
+<td>-</td>
+<td>png</td>
+</tr>
+<tr>
+<td>6</td>
+<td>jpg</td>
+<td>이미지</td>
+<td>JPG</td>
+<td>-</td>
+<td>jpg</td>
+</tr>
+<tr>
+<td>7</td>
+<td>mp3, 320kbps</td>
+<td>오디오</td>
+<td>mp3</td>
+<td>320 Kbps</td>
+<td>mp3</td>
+</tr>
+<tr>
+<td>8</td>
+<td>mp3, 256 kbps</td>
+<td>오디오</td>
+<td>mp3</td>
+<td>256 Kbps</td>
+<td>mp3</td>
+</tr>
+<tr>
+<td>9</td>
+<td>mp3, 192kbps</td>
+<td>오디오</td>
+<td>mp3</td>
+<td>192 Kbps</td>
+<td>mp3</td>
+</tr>
+<tr>
+<td>10</td>
+<td>mp3, 128kbps</td>
+<td>오디오</td>
+<td>mp3</td>
+<td>128 Kbps</td>
+<td>mp3</td>
+</tr>
+<tr>
+<td>11</td>
+<td>h.264/aac, 20Mbps, mp4</td>
+<td>동영상</td>
+<td>h.264/aac</td>
+<td>20000 Kbps</td>
+<td>mp4</td>
+</tr>
+<tr>
+<td>12</td>
+<td>h.264/aac, 10Mbps, mp4</td>
+<td>동영상</td>
+<td>h.264/aac</td>
+<td>10000 Kbps</td>
+<td>mp4</td>
+</tr>
+<tr>
+<td>13</td>
+<td>h.264/aac, 2Mbps, mp4</td>
+<td>동영상</td>
+<td>h.264/aac</td>
+<td>2000 Kbps</td>
+<td>mp4</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="_8">인제스트 형식 화면 사용 방법</h3>
+<ol>
+<li><strong>인제스트 형식 페이지 접근</strong>:</li>
+<li>
+<p>좌측 메뉴에서 <code>시스템</code> -&gt; <code>인제스트 형식</code>을 클릭하여 인제스트 형식 페이지에 접근할 수 있습니다.</p>
+</li>
+<li>
+<p><strong>형식 검색</strong>:</p>
+</li>
+<li>
+<p>설정 항목을 검색하려면 페이지 상단의 검색 창에 검색어를 입력하고 <code>검색</code> 버튼을 클릭합니다.</p>
+</li>
+<li>
+<p><strong>형식 항목 추가</strong>:</p>
+</li>
+<li>
+<p>새로운 형식 항목을 추가하려면 페이지 우측 하단의 <code>등록</code> 버튼을 클릭합니다. 새로운 형식 팝업 창이 열리며, 여기서 형식 항목의 이름, 매체 유형, 코덱, 압축률, 확장자 등을 입력한 후 <code>저장</code> 버튼을 클릭하여 형식 항목을 추가합니다.</p>
+</li>
+<li>
+<p><strong>형식 항목 수정</strong>:</p>
+</li>
+<li>
+<p>형식 항목을 수정하려면 형식 목록에서 해당 항목을 클릭하여 편집 모드로 전환한 후 필요한 정보를 수정합니다. 수정 후 <code>저장</code> 버튼을 클릭하여 변경 사항을 저장합니다.</p>
+</li>
+<li>
+<p><strong>형식 항목 삭제</strong>:</p>
+</li>
+<li>형식 항목을 삭제하려면 형식 목록에서 삭제할 항목 옆의 휴지통 아이콘을 클릭합니다. 삭제 확인 팝업 창이 열리며, 여기서 <code>확인</code> 버튼을 클릭하여 형식 항목을 삭제합니다.</li>
+</ol>
+<hr />
+<h3 id="_9">인제스트 형식 항목 설명</h3>
+<ul>
+<li><strong>이름</strong>: 인제스트할 미디어 파일의 이름을 나타냅니다.</li>
+<li><strong>매체 유형</strong>: 인제스트할 미디어 파일의 유형을 나타냅니다. (이미지, 동영상, 오디오, 문서, 3D 모델 등)</li>
+<li><strong>코덱</strong>: 인제스트할 미디어 파일에 사용된 코덱을 나타냅니다.</li>
+<li><strong>압축률</strong>: 인제스트할 미디어 파일의 압축률을 나타냅니다.</li>
+<li><strong>확장자</strong>: 인제스트할 미디어 파일의 확장자를 나타냅니다.</li>
+</ul>
+<p>인제스트 형식은 전체 시스템의 데이터 수집 및 관리에 중요한 역할을 하므로, 신중하게 설정을 변경해야 합니다.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../dashboard/" class="btn btn-neutral float-left" title="대시보드"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../storage_settings/" class="btn btn-neutral float-right" title="스토리지">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../dashboard/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../storage_settings/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
