@@ -1,3 +1,6 @@
+---
+title: 랜딩 페이지
+---
 # 랜딩 페이지
 ![MYMY 랜딩 페이지](images/landing_page.png)
 

@@ -1,15 +1,50 @@
 site_name: MYMY Archive
+# site_url: http://127.0.0.1:8000/
 
 theme:
-  name: readthedocs
+  # name: readthedocs
+  name: material
+  language: ko
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.path
 
 plugins: []
 
+# mermaid support
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra:
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX
+  alternate:
+    # - name: English
+    #   link: /en/ 
+    #   lang: en
+    # - name: Korean
+    #   link: /
+    #   lang: ko
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
 
 nav:
-  - '소개': 'index.md'
+  - 'index.md'
   - '사용자 매뉴얼':
-    - '랜딩 페이지':
+    - '랜딩 페이지': 
       - '랜딩 페이지': 'landing_page/landing_page.md'
       - '회원 가입': 'landing_page/sign_up.md'
       - '로그인': 'landing_page/login_page.md'
@@ -37,8 +72,6 @@ nav:
     - '아카이브': 'admin_guide/archive_management.md'
     - '메타데이터': 'admin_guide/metadata_management.md'    
     - '커뮤니티 관리': 'admin_guide/community_management.md'
-    - '알람': 'admin_guide/alarm_history.md'
-  - '오류 해결':
-    - '오류 해결': 'troubleshooting/troubleshooting.md'
+    - '알람': 'admin_guide/alarm_management.md'
+  - '오류 해결': 'troubleshooting/troubleshooting.md'
   - 'About': 'about.md'
-

@@ -17,13 +17,9 @@ python -m venv .venv
 
 ## install package
 ```
-pip install mkdocs
+pip install -r requirements.txt
 ```
 
-## init mkdocs
-```
-mkdocs new .
-```
 ## run mkdocs
 ```
 mkdocs serve

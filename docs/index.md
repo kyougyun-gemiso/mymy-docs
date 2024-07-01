@@ -1,3 +1,6 @@
+---
+title: 소개
+---
 # 소개
 
 ![MYMY-매뉴얼](images/mymy-매뉴얼로고.png)
