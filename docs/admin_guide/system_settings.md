@@ -3,21 +3,21 @@
 
 시스템 설정 페이지는 MYMY Archive 시스템의 다양한 설정 항목을 관리할 수 있는 인터페이스입니다. 아래 표는 시스템 설정 페이지에서 사용 가능한 설정 항목들에 대한 설명입니다.
 
-| No. | 이름                        | 한글 이름                    | 유형     | 코드                       | 데이터 형식      | 값                   | 비고 |
-|-----|-----------------------------|------------------------------|----------|----------------------------|------------------|----------------------|------|
-| 1   | application name            | 애플리케이션 이름             | UI       | APP_NAME                   | STRING           | MYMY                 | -    |
-| 2   | ariel proxy api key         | 아리엘 프록시 API 키          | SYSTEM   | ARIEL_PROXY_API_KEY        | STRING           | eyJ0eXA...           | -    |
-| 3   | the ariel proxy api route   | 아리엘 프록시 API 루트        | SYSTEM   | ARIEL_PROXY_API_ROUTE      | STRING           | http://127.0.0.1/... | -    |
-| 4   | the backup time every day   | 매일 백업 시간                | SYSTEM   | BACKUP_PERIOD              | DATE             | 2020/07/11           | -    |
-| 5   | default language            | 기본 설정 언어                | UI       | DEFAULT_LANGUAGE           | STRING OPTIONS   | ko                   | -    |
-| 6   | default items per page      | 페이징 기본 항목             | UI       | DEFAULT_PAGE_SIZE          | INTEGER          | 100                  | -    |
-| 7   | default value of quota      | 일반 사용자에 대한 할당량 기본값 | SYSTEM   | DEFAULT_QUOTA              | INTEGER OPTIONS  | 9999999              | -    |
-| 8   | Delete temporary files      | 임시 파일 삭제                | SYSTEM   | DELETE_TMP_FILE            | INTEGER          | 604800               | -    |
-| 9   | path of elastic certificate | 탄력적 인증서의 경로          | SYSTEM   | ELASTIC_SEARCH_CERT_PATH   | STRING           | ../../http_ca.crt    | -    |
-| 10  | Enable Elastic search       | 탄력적 검색 활성화            | SYSTEM   | ELASTIC_SEARCH_ENABLED     | BOOLEAN          | true                 | -    |
-| 11  | ElasticSearch IP and port   | ElasticSearch IP 및 포트      | SYSTEM   | ELASTIC_SEARCH_HOST        | STRING           | https://ec2-3-34-18... | -    |
-| 12  | ElasticSearch Index         | 엘라스틱서치 인덱스            | SYSTEM   | ELASTIC_SEARCH_INDEX       | STRING           | mymy_index          | -    |
-| 13  | Password of elastic user    | Elastic 사용자 비밀번호        | SYSTEM   | ELASTIC_SEARCH_PASSWORD    | STRING           | ***          | -    |
+| No. | 이름                        | 유형     | 코드                       | 데이터 형식      | 값                   |
+|-----|-----------------------------|----------|----------------------------|------------------|----------------------|
+| 1   | application name            | UI       | APP_NAME                   | STRING           | MYMY                 |
+| 2   | ariel proxy api key         | SYSTEM   | ARIEL_PROXY_API_KEY        | STRING           | eyJ0eXA...           |
+| 3   | the ariel proxy api route   | SYSTEM   | ARIEL_PROXY_API_ROUTE      | STRING           | http://127.0.0.1/... |
+| 4   | the backup time every day   | SYSTEM   | BACKUP_PERIOD              | DATE             | 2020/07/11           |
+| 5   | default language            | UI       | DEFAULT_LANGUAGE           | STRING OPTIONS   | ko                   |
+| 6   | default items per page      | UI       | DEFAULT_PAGE_SIZE          | INTEGER          | 100                  |
+| 7   | default value of quota      | SYSTEM   | DEFAULT_QUOTA              | INTEGER OPTIONS  | 9999999              |
+| 8   | Delete temporary files      | SYSTEM   | DELETE_TMP_FILE            | INTEGER          | 604800               |
+| 9   | path of elastic certificate | SYSTEM   | ELASTIC_SEARCH_CERT_PATH   | STRING           | ../../http_ca.crt    |
+| 10  | Enable Elastic search       | SYSTEM   | ELASTIC_SEARCH_ENABLED     | BOOLEAN          | true                 |
+| 11  | ElasticSearch IP and port   | SYSTEM   | ELASTIC_SEARCH_HOST        | STRING           | https://ec2-3-34-18... |
+| 12  | ElasticSearch Index         | SYSTEM   | ELASTIC_SEARCH_INDEX       | STRING           | mymy_index          |
+| 13  | Password of elastic user    | SYSTEM   | ELASTIC_SEARCH_PASSWORD    | STRING           | ***                  |
 
 
 ### 시스템 설정 화면 사용 방법
