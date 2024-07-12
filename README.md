@@ -1,5 +1,6 @@
 # gh-pages
 https://kyougyun-gemiso.github.io/mymy-docs/
+http://127.0.0.1:8000/
 
 # venv
 
