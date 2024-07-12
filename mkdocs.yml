@@ -12,7 +12,17 @@ theme:
     - navigation.instant.prefetch
     - navigation.path
 
-plugins: []
+plugins:
+  i18n:
+    docs_structure: folder
+    languages:
+        - locale: ko
+          name: 한국어
+          build: true
+        - locale: en
+          default: true
+          name: English
+          build: true
 
 # mermaid support
 markdown_extensions:
@@ -26,13 +36,13 @@ extra:
   # analytics:
   #   provider: google
   #   property: G-XXXXXXXXXX
-  alternate:
-    # - name: English
-    #   link: /en/ 
-    #   lang: en
-    # - name: Korean
-    #   link: /
-    #   lang: ko
+  # alternate:
+  #   - name: English
+  #     link: /en/ 
+  #     lang: en
+  #   - name: Korean
+  #     link: /
+  #     lang: ko
   consent:
     title: Cookie consent
     description: >- 
